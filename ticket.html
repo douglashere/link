@@ -4,320 +4,176 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <title>Winner Ticket</title>
+<title>Winner Ticket</title>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+<style>
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+body{
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-          rel="stylesheet">
+    margin:0;
 
-    <style>
+    padding:20px;
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+    font-family:Arial, sans-serif;
 
-        body{
+    background:linear-gradient(
+        to bottom,
+        #ffb6d9,
+        #ff4f81
+    );
 
-            font-family:'Poppins', sans-serif;
+    text-align:center;
 
-            background:linear-gradient(
-                180deg,
-                #ffb6d9,
-                #ff7eb3,
-                #ff4f81
-            );
+    color:white;
+}
 
-            background-size:400% 400%;
+.card{
 
-            animation:fundo 10s ease infinite;
+    background:rgba(255,255,255,0.2);
 
-            color:white;
+    border-radius:20px;
 
-            text-align:center;
+    padding:25px;
 
-            padding:30px;
-        }
+    max-width:800px;
 
-        @keyframes fundo{
+    margin:auto;
 
-            0%{
-                background-position:0% 50%;
-            }
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.3);
+}
 
-            50%{
-                background-position:100% 50%;
-            }
+h1{
 
-            100%{
-                background-position:0% 50%;
-            }
-        }
+    color:#ff003c;
 
-        .container{
+    font-size:60px;
 
-            width:100%;
+    text-shadow:
+        2px 2px 10px rgba(0,0,0,0.4);
+}
 
-            display:flex;
+p{
 
-            justify-content:center;
-        }
+    font-size:22px;
 
-        .card{
+    line-height:1.5;
+}
 
-            width:90%;
-            max-width:900px;
+img{
 
-            background:rgba(255,255,255,0.18);
+    width:100%;
 
-            border-radius:25px;
+    max-width:650px;
 
-            padding:35px;
+    height:auto;
 
-            box-shadow:
-                0 8px 25px rgba(0,0,0,0.25);
+    border-radius:20px;
 
-            animation:entrada 1s ease;
+    margin-top:20px;
 
-            transition:0.4s;
-        }
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.4);
+}
 
-        .card:hover{
+.botao{
 
-            transform:translateY(-5px);
-        }
+    display:inline-block;
 
-        @keyframes entrada{
+    margin-top:30px;
 
-            from{
+    padding:15px 35px;
 
-                opacity:0;
+    background:#ff003c;
 
-                transform:
-                translateY(40px);
-            }
+    color:white;
 
-            to{
+    text-decoration:none;
 
-                opacity:1;
+    border-radius:40px;
 
-                transform:
-                translateY(0);
-            }
-        }
+    font-size:24px;
 
-        h1{
+    font-weight:bold;
+}
 
-            font-size:8vw;
+audio{
 
-            color:#ff003c;
+    margin-top:30px;
 
-            margin-bottom:20px;
+    width:90%;
 
-            animation:brilho 2s infinite alternate;
-        }
+    max-width:350px;
+}
 
-        @keyframes brilho{
+@media(max-width:700px){
 
-            from{
+    h1{
+        font-size:40px;
+    }
 
-                text-shadow:
-                0 0 10px #fff,
-                0 0 20px #ff0066;
-            }
+    p{
+        font-size:18px;
+    }
 
-            to{
+    .botao{
+        font-size:20px;
+    }
+}
 
-                text-shadow:
-                0 0 20px #fff,
-                0 0 40px #ff0066;
-            }
-        }
-
-        p{
-
-            font-size:22px;
-
-            line-height:1.6;
-
-            margin-top:15px;
-        }
-
-        img{
-
-            margin-top:30px;
-
-            width:100%;
-
-            max-width:700px;
-
-            height:auto;
-
-            border-radius:20px;
-
-            box-shadow:
-                0 10px 25px rgba(0,0,0,0.4);
-
-            transition:0.4s;
-        }
-
-        img:hover{
-
-            transform:scale(1.03);
-        }
-
-        .botao{
-
-            display:inline-block;
-
-            margin-top:35px;
-
-            padding:18px 45px;
-
-            background:linear-gradient(
-                90deg,
-                #ff003c,
-                #ff4f81
-            );
-
-            color:white;
-
-            text-decoration:none;
-
-            font-size:24px;
-
-            font-weight:bold;
-
-            border-radius:50px;
-
-            box-shadow:
-                0 5px 15px rgba(255,0,60,0.5);
-
-            transition:0.3s;
-        }
-
-        .botao:hover{
-
-            transform:scale(1.08);
-
-            background:linear-gradient(
-                90deg,
-                #ff4f81,
-                #ff003c
-            );
-        }
-
-        .musica{
-
-            margin-top:40px;
-        }
-
-        .musica p{
-
-            margin-bottom:15px;
-
-            font-size:20px;
-        }
-
-        audio{
-
-            width:90%;
-
-            max-width:350px;
-
-            display:block;
-
-            margin:20px auto;
-        }
-
-        @media(max-width:700px){
-
-            h1{
-                font-size:14vw;
-            }
-
-            p{
-                font-size:18px;
-            }
-
-            .botao{
-                font-size:20px;
-                padding:15px 30px;
-            }
-        }
-
-    </style>
+</style>
 
 </head>
 
 <body>
 
-    <div class="container">
+<div class="card">
 
-        <div class="card">
+    <h1>
+        Congratulations!
+    </h1>
 
-            <h1>
-                Congratulations!
-            </h1>
+    <p>
+        We are pleased to inform that you won
+        a ticket for the
+        <mark>Enhypen</mark> show!!!
+    </p>
 
-            <p>
-                We are pleased to inform that you won
-                a ticket for the
-                <mark>Enhypen</mark> show!!!
-            </p>
+    <img src="enhypen.jpg"
+         alt="Enhypen">
 
-            <img src="enhypen.jpg"
-                 alt="Enhypen Blood Saga">
+    <p>
+        The event will take place next July
+        in São Paulo.
+    </p>
 
-            <p>
-                The event will take place next July
-                in São Paulo.
-            </p>
+    <p>
+        If you are craving for this unique
+        opportunity, click below.
+    </p>
 
-            <p>
-                If you are craving for this unique
-                opportunity, click on the button below.
-            </p>
+    <a href="mugen.html"
+       class="botao">
 
-            <a href="mugen.html"
-               class="botao">
+       ENTER NOW
 
-               ENTER NOW
+    </a>
 
-            </a>
+    <br>
 
-        </div>
+    <audio controls>
 
-    </div>
+        <source src="Enhypen-Given-Taken.mp3"
+                type="audio/mpeg">
 
-    <div class="musica">
+    </audio>
 
-        <p>
-            Click below to play the music 🎵
-        </p>
-
-        <audio controls>
-
-            <source src="Enhypen-Given-Taken.mp3"
-                    type="audio/mpeg">
-
-            Your browser does not support audio.
-
-        </audio>
-
-    </div>
+</div>
 
 </body>
 
