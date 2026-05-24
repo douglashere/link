@@ -1,102 +1,187 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
 <title>Winner Ticket</title>
 
 <style>
 
 body{
+
     margin:0;
     padding:0;
-    background:#f7c7d3;
+
+    background:linear-gradient(
+        180deg,
+        #ffb6c1,
+        #ff8fab
+    );
+
     font-family:Arial, sans-serif;
-    display:flex;
-    justify-content:center;
+
+    text-align:center;
+
+    color:white;
 }
 
 .container{
-    width:420px;
-    padding:30px;
-    text-align:center;
+
+    padding:40px 20px;
+}
+
+.card{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35);
 }
 
 h1{
-    color:#ff1744;
-    font-size:65px;
-    margin-bottom:35px;
-    font-weight:bold;
+
+    font-size:7vw;
+
+    color:white;
+
+    text-shadow:
+        0 0 10px #ff0055,
+        0 0 20px #ff0055;
+
+    margin-bottom:30px;
 }
 
-.text{
-    font-size:24px;
+.texto{
+
+    font-size:28px;
+
+    line-height:1.4;
+
+    margin-top:20px;
+
+    color:white;
+
     font-weight:bold;
-    color:#111;
-    line-height:1.3;
-    margin-bottom:25px;
 }
 
 .highlight{
+
     background:#ffe600;
-    padding:3px 8px;
-    border-radius:8px;
+
+    color:black;
+
+    padding:4px 10px;
+
+    border-radius:10px;
 }
 
 img{
+
     width:100%;
+    max-width:900px;
+
+    height:auto;
+
     border-radius:20px;
-    margin:25px 0;
-    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+    margin-top:25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.45);
 }
 
-.link{
+.botao{
+
     display:inline-block;
-    margin-top:20px;
-    padding:14px 45px;
-    background:#ff1744;
+
+    margin-top:35px;
+
+    padding:18px 45px;
+
+    background:#ff0055;
+
     color:white;
+
     text-decoration:none;
-    border-radius:40px;
-    font-size:22px;
+
+    border-radius:50px;
+
+    font-size:24px;
+
     font-weight:bold;
+
     transition:0.3s;
 }
 
-.link:hover{
-    background:#e6003d;
+.botao:hover{
+
+    background:#d60049;
+
     transform:scale(1.05);
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>Congratulations!</h1>
+    <div class="card">
 
-    <p class="text">
-        We are pleased to inform that you won a ticket for the
-        <span class="highlight">Enhypen</span> show!!!
-    </p>
+        <h1>
+            Congratulations!
+        </h1>
 
-    <img src="enhypen.jpg" alt="Enhypen">
+        <p class="texto">
+            We are pleased to inform that you won
+            a ticket for the
+            <span class="highlight">
+                Enhypen
+            </span>
+            show!!!
+        </p>
 
-    <p class="text">
-        The event will take place next July in São Paulo.
-    </p>
+        <img src="enhypen.jpg"
+             alt="Enhypen">
 
-    <p class="text">
-        If you are craving for this unique opportunity,
-        click on the link below.
-    </p>
+        <p class="texto">
+            The event will take place next July
+            in São Paulo.
+        </p>
 
-    <a href="#" class="link">ACCESS</a>
+        <p class="texto">
+            If you are craving for this unique
+            opportunity, click below.
+        </p>
+
+        <a href="#"
+           class="botao">
+            ACCESS
+        </a>
+
+    </div>
 
 </div>
 
 </body>
+
 </html>
