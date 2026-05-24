@@ -1,133 +1,102 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>Enhypen Ticket</title>
+<title>Winner Ticket</title>
 
 <style>
 
 body{
-
-    background:pink;
-
-    font-family:Arial;
-
-    text-align:center;
-
     margin:0;
-
-    padding:20px;
-
-    color:white;
+    padding:0;
+    background:#f7c7d3;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
 }
 
-.card{
-
-    background:#ff4f81;
-
-    border-radius:20px;
-
-    padding:20px;
-
-    max-width:700px;
-
-    margin:auto;
+.container{
+    width:420px;
+    padding:30px;
+    text-align:center;
 }
 
 h1{
-
-    color:red;
-
-    font-size:50px;
+    color:#ff1744;
+    font-size:65px;
+    margin-bottom:35px;
+    font-weight:bold;
 }
 
-p{
+.text{
+    font-size:24px;
+    font-weight:bold;
+    color:#111;
+    line-height:1.3;
+    margin-bottom:25px;
+}
 
-    font-size:22px;
+.highlight{
+    background:#ffe600;
+    padding:3px 8px;
+    border-radius:8px;
 }
 
 img{
-
-    width:90%;
-
-    max-width:500px;
-
+    width:100%;
     border-radius:20px;
+    margin:25px 0;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-.botao{
-
+.link{
     display:inline-block;
-
-    background:red;
-
-    color:white;
-
-    padding:15px 30px;
-
-    text-decoration:none;
-
-    border-radius:30px;
-
     margin-top:20px;
-
+    padding:14px 45px;
+    background:#ff1744;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
     font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-audio{
-
-    width:90%;
-
-    max-width:300px;
-
-    margin-top:20px;
+.link:hover{
+    background:#e6003d;
+    transform:scale(1.05);
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>
-Congratulations!
-</h1>
+    <h1>Congratulations!</h1>
 
-<p>
-You won an Enhypen ticket!
-</p>
+    <p class="text">
+        We are pleased to inform that you won a ticket for the
+        <span class="highlight">Enhypen</span> show!!!
+    </p>
 
-<img src="enhypen.jpg">
+    <img src="enhypen.jpg" alt="Enhypen">
 
-<br><br>
+    <p class="text">
+        The event will take place next July in São Paulo.
+    </p>
 
-<a href="mugen.html"
-   class="botao">
+    <p class="text">
+        If you are craving for this unique opportunity,
+        click on the link below.
+    </p>
 
-ENTER NOW
-
-</a>
-
-<br><br>
-
-<audio controls>
-
-<source src="Enhypen-Given-Taken.mp3"
-        type="audio/mpeg">
-
-</audio>
+    <a href="#" class="link">ACCESS</a>
 
 </div>
 
 </body>
-
 </html>
