@@ -14,115 +14,75 @@
 <style>
 
 body{
+
     margin:0;
     padding:0;
 
-    background:linear-gradient(
-        180deg,
-        #ffb6c1,
-        #ff8fab
-    );
+    background:#ffccd5;
 
     font-family:Arial, sans-serif;
 
     text-align:center;
-
-    color:white;
 }
 
 .container{
-    padding:40px 20px;
+
+    width:100%;
+
+    padding:30px 10px;
+
+    box-sizing:border-box;
 }
 
 h1{
 
-    font-size:7vw;
+    color:red;
 
-    text-shadow:
-        0 0 10px #ff0055,
-        0 0 20px #ff0055;
+    font-size:60px;
 
-    margin-bottom:30px;
-}
-
-.card{
-
-    width:90%;
-    max-width:1000px;
-
-    margin:auto;
-
-    padding:30px;
-
-    border-radius:25px;
-
-    background:rgba(0,0,0,0.35);
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.5);
-}
-
-img{
-
-    width:100%;
-    max-width:900px;
-
-    height:auto;
-
-    border-radius:20px;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.45);
+    margin-bottom:40px;
 }
 
 .texto{
 
-    font-size:25px;
-
-    margin-top:20px;
-
-    color:white;
+    font-size:28px;
 
     font-weight:bold;
+
+    color:black;
+
+    margin-top:30px;
+
+    line-height:1.3;
 }
 
 .highlight{
 
-    background:#ffe600;
+    background:yellow;
 
-    color:black;
+    padding:2px 8px;
+}
 
-    padding:4px 10px;
+img{
 
-    border-radius:10px;
+    width:95%;
+
+    max-width:900px;
+
+    margin-top:30px;
 }
 
 .botao{
 
     display:inline-block;
 
-    margin-top:30px;
+    margin-top:40px;
 
-    padding:18px 40px;
+    font-size:30px;
 
-    background:#ff0055;
+    font-weight:bold;
 
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:50px;
-
-    font-size:22px;
-
-    transition:0.3s;
-}
-
-.botao:hover{
-
-    background:#d60049;
-
-    transform:scale(1.05);
+    color:purple;
 }
 
 </style>
@@ -133,40 +93,35 @@ img{
 
 <div class="container">
 
-    <div class="card">
+    <h1>
+        Congratulation!
+    </h1>
 
-        <h1>
-            Congratulations!!!
-        </h1>
+    <p class="texto">
+        We are pleased to inform that you won a
+        ticket for the
+        <span class="highlight">
+            Enhypen
+        </span>
+        show !!!
+    </p>
 
-        <p class="texto">
-            We are pleased to inform that you won
-            a ticket for the
-            <span class="highlight">
-                Enhypen
-            </span>
-            show!!!
-        </p>
+    <img src="enhypen.jpg"
+         alt="Enhypen">
 
-        <img src="enhypen.jpg"
-             alt="Enhypen">
+    <p class="texto">
+        The event will take place next July in São Paulo.
+    </p>
 
-        <p class="texto">
-            The event will take place next July
-            in São Paulo.
-        </p>
+    <p class="texto">
+        If you are craving for this unique opportunity,
+        click on the link below.
+    </p>
 
-        <p class="texto">
-            If you are craving for this unique
-            opportunity, click below.
-        </p>
-
-        <a href="#"
-           class="botao">
-            ACCESS
-        </a>
-
-    </div>
+    <a href="#"
+       class="botao">
+       LINK
+    </a>
 
 </div>
 
