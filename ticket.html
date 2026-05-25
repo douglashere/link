@@ -4,209 +4,173 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<title>Winner Ticket</title>
+    <title>Winner Ticket</title>
 
-<style>
+    <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        body{
+            margin:0;
+            padding:0;
 
-body{
+            background:linear-gradient(
+                180deg,
+                #ffb6c1,
+                #ff8fab
+            );
 
-    min-height:100vh;
+            font-family:Arial, sans-serif;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+            text-align:center;
 
-    padding:20px;
+            color:white;
+        }
 
-    background:linear-gradient(
-        180deg,
-        #ffb6c1,
-        #ff8fab
-    );
+        .container{
+            padding:40px 20px;
+        }
 
-    font-family:Arial, sans-serif;
+        h1{
 
-    text-align:center;
+            font-size:7vw;
 
-    color:white;
-}
+            text-shadow:
+                0 0 10px #ff0055,
+                0 0 20px #ff0055;
 
-.container{
-    width:100%;
-}
+            margin-bottom:30px;
+        }
 
-.card{
+        .card{
 
-    width:100%;
-    max-width:900px;
+            width:90%;
+            max-width:1000px;
 
-    margin:auto;
+            margin:auto;
 
-    padding:30px 20px;
+            padding:30px;
 
-    border-radius:25px;
+            border-radius:25px;
 
-    background:rgba(255,255,255,0.15);
+            background:rgba(255,255,255,0.15);
 
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
+            backdrop-filter:blur(8px);
 
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.35);
-}
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.35);
+        }
 
-h1{
+        img{
 
-    font-size:clamp(32px, 7vw, 70px);
+            width:100%;
+            max-width:900px;
 
-    color:white;
+            height:auto;
 
-    text-shadow:
-        0 0 10px #ff0055,
-        0 0 20px #ff0055;
+            border-radius:20px;
 
-    margin-bottom:25px;
-}
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.45);
+        }
 
-.texto{
+        .texto{
 
-    font-size:clamp(16px, 4vw, 28px);
+            font-size:25px;
 
-    line-height:1.5;
+            margin-top:20px;
 
-    margin-top:20px;
+            color:white;
 
-    color:white;
+            font-weight:bold;
+        }
 
-    font-weight:bold;
-}
+        .highlight{
 
-.highlight{
+            background:#ffe600;
 
-    background:#ffe600;
+            color:black;
 
-    color:black;
+            padding:4px 10px;
 
-    padding:4px 10px;
+            border-radius:10px;
+        }
 
-    border-radius:10px;
-}
+        .botao{
 
-img{
+            display:inline-block;
 
-    width:100%;
-    max-width:700px;
+            margin-top:30px;
 
-    height:auto;
+            padding:18px 40px;
 
-    border-radius:20px;
+            background:#ff0055;
 
-    margin-top:25px;
+            color:white;
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.45);
-}
+            text-decoration:none;
 
-.botao{
+            border-radius:50px;
 
-    display:inline-block;
+            font-size:22px;
 
-    margin-top:35px;
+            transition:0.3s;
+        }
 
-    padding:16px 35px;
+        .botao:hover{
 
-    background:#ff0055;
+            background:#d60049;
 
-    color:white;
+            transform:scale(1.05);
+        }
 
-    text-decoration:none;
-
-    border-radius:50px;
-
-    font-size:clamp(16px, 4vw, 24px);
-
-    font-weight:bold;
-
-    transition:0.3s;
-}
-
-.botao:hover{
-
-    background:#d60049;
-
-    transform:scale(1.05);
-}
-
-@media(max-width:600px){
-
-    .card{
-        padding:25px 15px;
-    }
-
-    img{
-        border-radius:15px;
-    }
-
-    .botao{
-        width:100%;
-    }
-}
-
-</style>
+    </style>
 
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="card">
+        <div class="card">
 
-        <h1>
-            Congratulations!
-        </h1>
+            <h1>
+                Congratulations!!!
+            </h1>
 
-        <p class="texto">
-            We are pleased to inform that you won
-            a ticket for the
-            <span class="highlight">
-                Enhypen
-            </span>
-            show!!!
-        </p>
+            <p class="texto">
+                We are pleased to inform that you won
+                a ticket for the
+                <span class="highlight">
+                    Enhypen
+                </span>
+                show!!!
+            </p>
 
-        <img src="enhypen.jpg"
-             alt="Enhypen">
+            <img src="enhypen.jpg"
+                 alt="Enhypen">
 
-        <p class="texto">
-            The event will take place next July
-            in São Paulo.
-        </p>
+            <p class="texto">
+                The event will take place next July
+                in São Paulo.
+            </p>
 
-        <p class="texto">
-            If you are craving for this unique
-            opportunity, click below.
-        </p>
+            <p class="texto">
+                If you are craving for this unique
+                opportunity, click below.
+            </p>
 
-        <a href="#"
-           class="botao">
-            ACCESS
-        </a>
+            <a href="#"
+               class="botao">
+                ACCESS
+            </a>
+
+        </div>
 
     </div>
-
-</div>
 
 </body>
 
