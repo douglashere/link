@@ -13,10 +13,21 @@
 
 <style>
 
-body{
-
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
 
     background:linear-gradient(
         180deg,
@@ -32,24 +43,24 @@ body{
 }
 
 .container{
-
-    padding:40px 20px;
+    width:100%;
 }
 
 .card{
 
-    width:90%;
-    max-width:1000px;
+    width:100%;
+    max-width:900px;
 
     margin:auto;
 
-    padding:35px;
+    padding:30px 20px;
 
     border-radius:25px;
 
     background:rgba(255,255,255,0.15);
 
     backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
 
     box-shadow:
         0 8px 25px rgba(0,0,0,0.35);
@@ -57,7 +68,7 @@ body{
 
 h1{
 
-    font-size:7vw;
+    font-size:clamp(32px, 7vw, 70px);
 
     color:white;
 
@@ -65,14 +76,14 @@ h1{
         0 0 10px #ff0055,
         0 0 20px #ff0055;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .texto{
 
-    font-size:28px;
+    font-size:clamp(16px, 4vw, 28px);
 
-    line-height:1.4;
+    line-height:1.5;
 
     margin-top:20px;
 
@@ -95,7 +106,7 @@ h1{
 img{
 
     width:100%;
-    max-width:900px;
+    max-width:700px;
 
     height:auto;
 
@@ -113,7 +124,7 @@ img{
 
     margin-top:35px;
 
-    padding:18px 45px;
+    padding:16px 35px;
 
     background:#ff0055;
 
@@ -123,7 +134,7 @@ img{
 
     border-radius:50px;
 
-    font-size:24px;
+    font-size:clamp(16px, 4vw, 24px);
 
     font-weight:bold;
 
@@ -135,6 +146,21 @@ img{
     background:#d60049;
 
     transform:scale(1.05);
+}
+
+@media(max-width:600px){
+
+    .card{
+        padding:25px 15px;
+    }
+
+    img{
+        border-radius:15px;
+    }
+
+    .botao{
+        width:100%;
+    }
 }
 
 </style>
